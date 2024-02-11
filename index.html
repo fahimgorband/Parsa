@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website nachtwinkel</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="h1">
+            <h1>avondwinkel parsa</h1>
+            <nav>
+
+                <ul>
+
+                    <li class="hier">
+                        <a href="index.html">main</a>
+                    </li>
+                    <li><a href="websiteoverons.html">Over ons</a></li>
+                    <li><a href="websiteaanbod.html">Onze aanbod</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="intromain">
+                <h2 id="hmain">Welkom bij Parsa: Onze 15-Jarige Avondwinkel in Rotselaar</h2>
+                <p id="pmain">
+                    Ontdek het verhaal van Parsa, een vertrouwd gezicht in Rotselaar voor de afgelopen 15 jaar. Onze
+                    oprichter, een 65-jarige Afghaanse vluchteling, transformeerde met vastberadenheid en spaargeld een
+                    stukje van ons dorp tot een warme ontmoetingsplaats.
+                </p>
+                <p id="pmain">
+                    Van schoonmaker bij een lagere school tot trotse eigenaar van Parsa, zijn reis weerspiegelt de
+                    verbinding met de gemeenschap. Onze avondwinkel biedt niet alleen sterke drank, bier, sigaretten,
+                    vapes,
+                    snacks en frisdrank, maar is ook een plek waar vriendelijkheid en bekendheid heersen.
+                </p>
+                <p id="pmain">
+                    Of je nu snel iets nodig hebt of wilt ontspannen, Parsa verwelkomt je met open armen. Stap binnen,
+                    proef
+                    de sfeer en word deel van onze groeiende familie. Welkom bij Parsa, waar elke klant een gewaardeerde
+                    gast is.
+                </p>
+            </article>
+
+            <article class="slideshow-container">
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+
+                <figure class="mySlides fade">
+                    <a href="websiteoverons.html"> <img id="mainfoto" src="IMG/parsa.png"
+                            alt="opkuis verwilderde tuinen" /> </a>
+                    <p class="Duncan">Over ons</p>
+                </figure>
+                <figure class="mySlides fade">
+                    <a href="websiteaanbod.html"><img id="mainfoto" src="IMG/assortiment.jpg"
+                            alt="landbouwwerken" /></a>
+                    <p class="Duncan">Onze aanbod</p>
+                </figure>
+                <figure class="mySlides fade">
+                    <a href="feedback.html"> <img id="mainfoto" src="IMG/feedback.jpg" />
+                    </a>
+                    <p class="Duncan">Feedback</p>
+                </figure>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </article>
+            <div id="googlemaps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.5626122544654!2d4.714511176484539!3d50.9484914716916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c15e707ee853cb%3A0x2f2c0a5c72c0dbe9!2sNachtwinkel%20Parsa!5e1!3m2!1snl!2sbe!4v1700412276763!5m2!1snl!2sbe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+        <footer>
+            Gemaakt door Fahim Gorbandi.
+        </footer>
+    </div>
+    <script>var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }</script>
+</body>
+
+</html>
